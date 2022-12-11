@@ -1,9 +1,11 @@
-body{
+body
+{
     font-family: 'Allerta Stencil';font-size: 15px;
     margin: auto;
 }
 
-header{
+header
+{
     text-align: right;
     position: absolute;
     padding-top: 40px;
@@ -14,8 +16,25 @@ header{
     left: 0;
 }
 
-nav a {
+nav a
+{
     text-align: center;
+    line-height: 48px;
+    width: 150px;
     display: block;
     background-color: aquamarine;
+    font-family: 'Allerta Stencil';font-size: 15px;
+
 }
+
+ul
+{
+    margin: 0%;
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
