@@ -28,5 +28,11 @@ window.onload = () => {
           body.classList.toggle(`no-scroll`);
       });
 
-
+        // an alternative to dismiss the modal will be to use the esc key on the keyboard
+    document.addEventListener(`keydown`, (e) => {
+        if (e.key === `Escape` && !modal_Off.classList.contains(`hidden`)) {
+            modal_Off.click();
+        }
+    });
 };
+
