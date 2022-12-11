@@ -12,7 +12,10 @@ header{
     top: 0;
     right: 0;
     left: 0;
+}
 
-
-
+nav a {
+    text-align: center;
+    display: block;
+    background-color: aquamarine;
 }
