@@ -38,3 +38,6 @@ a
     text-decoration: none;
 }
 
+ul li {
+    margin-left: -40px;
+  }
