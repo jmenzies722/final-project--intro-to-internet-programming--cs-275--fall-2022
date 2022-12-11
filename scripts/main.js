@@ -14,4 +14,12 @@ window.onload = () => {
          menu.classList.toggle(`hidden`);
      });
 
+      // when the modal option is clicked that will indicate the modal is on
+    const modal_On = document.getElementById(`modal`);
+    modal_On.addEventListener(`click`, () => {
+        modal_Off.classList.toggle(`hidden`);
+        body.classList.toggle(`no-scroll`);
+    });
+
+
 };
