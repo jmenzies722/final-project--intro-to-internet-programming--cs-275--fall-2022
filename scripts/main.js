@@ -21,5 +21,12 @@ window.onload = () => {
         body.classList.toggle(`no-scroll`);
     });
 
+      // when model is on the, user will be allowed to  click anywhere to dismiss the modal
+      const modal_Off = document.querySelectorAll(`div`)[0];
+      modal_Off.addEventListener(`click`, () => {
+          modal_Off.classList.toggle(`hidden`);
+          body.classList.toggle(`no-scroll`);
+      });
+
 
 };
