@@ -15,13 +15,13 @@ let compressHTML = () => {
 };
 
 let compressCSS = () => {
-    return src(`css/style.css`)
+    return src(`styles/*.css`)
         .pipe(cssCompressor({collapseWhitespace: true}))
         .pipe(dest(`prod`));
 };
 
 let compressJS = () => {
-    return src(`js/app.js`)
+    return src(`scripts/*.js`)
         .pipe(babel())
         .pipe(jsCompressor())
         .pipe(dest(`prod`));
@@ -34,13 +34,13 @@ let validateJS = () => {
 };
 
 let transpileJSForDev = () => {
-    return src(`js/app.js`)
+    return src(`scripts/*.js`)
         .pipe(babel())
         .pipe(dest(`temp/scripts`));
 };
 
 let transpileJSForProd = () => {
-    return src(`js/app.js`)
+    return src(`scripts/*.js`)
         .pipe(babel())
         .pipe(jsCompressor())
         .pipe(dest(`prod/scripts`));
@@ -52,17 +52,16 @@ let serve = () => {
         reloadDelay: 50,
         server: {
             baseDir: [
-                ``,
+                `temp`,
                 `./`,
-                `css`,
-                `js`,
+                `*`,
             ]
         }
     });
 
-    watch(`dev/html*.html`).on(`change`, reload);
-    watch(`css/*.css`).on(`change`, reload);
-    watch(`js/*.js`, series(validateJS, transpileJSForDev)).on(`change`, reload);
+    watch(`*.html`).on(`change`, reload);
+    watch(`styles/*.css`).on(`change`, reload);
+    watch(`scripts/*.js`, series(validateJS, transpileJSForDev)).on(`change`, reload);
 
 };
 exports.validateJS = validateJS;
