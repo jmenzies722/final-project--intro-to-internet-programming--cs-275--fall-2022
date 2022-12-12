@@ -52,9 +52,9 @@ let serve = () => {
         reloadDelay: 50,
         server: {
             baseDir: [
+                `.`,
                 `temp`,
-                `./`,
-                `*`,
+                `prod`,
             ]
         }
     });
