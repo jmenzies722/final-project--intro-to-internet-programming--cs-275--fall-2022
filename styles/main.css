@@ -93,9 +93,8 @@ no-scroll{
 }
 
 .m-panel {
-    background-color: rgba(15, 163, 52, 0.563);
+    background-color: rgba(111, 165, 125, 0.563);
     position: fixed;
-    filter: blur(2px);
     top: 0;
     left: 0;
     height: 100vh;
@@ -103,13 +102,21 @@ no-scroll{
   }
 
   .modal-content-pane {
-    background-color:  rgb(131, 212, 108);
+    background-color:  rgb(21, 193, 107);
     margin-right: auto;
     margin-left: auto;
     width: 60vw;
     height: 75vh;
     margin-top: 75px;
   }
+
+.modal-content{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+
+}
 
   @media only screen and (max-width: 736px) {
     nav {
