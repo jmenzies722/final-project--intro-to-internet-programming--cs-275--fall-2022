@@ -1,137 +1,120 @@
-header{
-    text-align: right;
-    position: absolute;
-    background-color: rgb(32, 151, 101);
-    padding-top: 40px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    top: 0;
-    right: 0;
-    left: 0;
+header {
+  text-align: right;
+  position: absolute;
+  background-color: #209765;
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  top: 0;
+  right: 0;
+  left: 0
 }
-
-body{
-    font-family: 'Allerta Stencil';font-size: 15px;
-    margin: 0;
+body {
+  font-family: 'Allerta Stencil';
+  font-size: 15px;
+  margin: 0
 }
-
-main{
-    margin: 10px;
-    margin-top: 90px;
+main {
+  margin: 10px;
+  margin-top: 90px
 }
-
-nav{
-    position: relative;
-    top: 75px;
-    width: 300px;
-    height: 50px;
+nav {
+  position: relative;
+  top: 75px;
+  width: 300px;
+  height: 50px
 }
-
-nav a{
-    text-align: center;
-    line-height: 48px;
-    width: 150px;
-    display: block;
-    background-color: rgb(131, 212, 108);
-    font-family: 'Allerta Stencil';font-size: 15px;
+nav a {
+  text-align: center;
+  line-height: 48px;
+  width: 150px;
+  display: block;
+  background-color: #83d46c;
+  font-family: 'Allerta Stencil';
+  font-size: 15px
 }
-
 nav a:hover {
-    background-color: rgb(73, 134, 16);
+  background-color: #498610
 }
-
-
-a{
-    text-decoration: none;
+a {
+  text-decoration: none
 }
-
-
-ul{
-    margin: 0%;
-    list-style-type: none;
+ul {
+  margin: 0;
+  list-style-type: none
 }
-
-ul li{
-    margin-left: -40px;
+ul li {
+  margin-left: -40px
 }
-
 nav > ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none
 }
-
-nav > ul > li{
-    position: relative;
-    flex-grow: 1;
-    margin: 0;
-    width: 150px;
+nav > ul > li {
+  position: relative;
+  flex-grow: 1;
+  margin: 0;
+  width: 150px
 }
 
 nav > ul > li:hover > ul {
-    visibility: visible;
+  visibility: visible
 }
 
 nav > ul > li > ul {
-    position: absolute;
-    left: 0;
-    visibility: hidden;
+  position: absolute;
+  left: 0;
+  visibility: hidden
 }
 
 nav > ul > li > ul a {
-    height: 48px;
-    line-height: 48px;
+  height: 48px;
+  line-height: 48px
 }
 
 .hidden {
-    display: none;
+  display: none
 }
-
-no-scroll{
-    overflow: hidden;
+no-scroll {
+  overflow: hidden
 }
 
 .m-panel {
-    background-color: rgba(111, 165, 125, 0.563);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    transition: 500ms;
-  }
-
-  .modal-content-pane {
-    background-color:  rgb(21, 193, 107);
-    margin-right: auto;
-    margin-left: auto;
-    width: 60vw;
-    height: 75vh;
-    margin-top: 75px;
-  }
-
-.modal-content{
-    text-align: center;
-    font-size: 70px;
-    color: rgb(0, 0, 0);
-    line-height: 1.5;
-
+  background-color: rgba(111,165,125,.563);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: .5s
 }
-
-  @media only screen and (max-width: 736px) {
-    nav {
-      flex-direction: column;
-      margin-right: 0;
-    }
-
-    nav ul {
-      flex-direction: column;
-    }
+.modal-content-pane {
+  background-color: #15c16b;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60vw;
+  height: 75vh;
+  margin-top: 75px
+}
+.modal-content {
+  text-align: center;
+  font-size: 70px;
+  color: #000;
+  line-height: 1.5
+}
+@media only screen and (max-width:736px) {
+  nav {
+    flex-direction: column;
+    margin-right: 0
   }
-
-  @media only screen and (min-width: 737px) {
-    nav {
-      margin: 0 auto;
-    }
+  nav ul {
+    flex-direction: column
   }
+}
+@media only screen and (min-width:737px) {
+  nav {
+    margin: 0 auto
+  }
+}
